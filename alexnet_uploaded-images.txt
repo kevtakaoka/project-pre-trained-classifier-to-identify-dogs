@@ -1,0 +1,79 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:            Russian_blue_01.jpg  label:               russian blue
+ 2 key:                    BMW_01.jpeg  label:                        bmw
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+ NOT A MATCH:
+
+           Russian_blue_01.jpg: 
+Real:               russian blue   Classifier:                      chihuahua
+
+                   BMW_01.jpeg: 
+Real:                        bmw   Classifier: binoculars, field glasses, opera glasses
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                         beagle
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                         beagle
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+           Russian_blue_01.jpg: 
+Real:               russian blue   Classifier:                      chihuahua  
+PetLabelDog: 0  ClassLabelDog: 1
+
+                   BMW_01.jpeg: 
+Real:                        bmw   Classifier: binoculars, field glasses, opera glasses  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match           :    0.0
+pct_correct_dogs    :  100.0
+pct_correct_breed   :    0.0
+pct_correct_notdogs :   50.0
+
+INCORRECT Dog/NOT Dog Assignments:
+a-Dog:               russian blue  NOT-a-Dog:                      chihuahua
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:                         beagle
+Real:                        dog   Classifier:                         beagle
+
+** Total Elapsed Runtime: 0:0:0
